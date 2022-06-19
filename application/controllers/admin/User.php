@@ -114,10 +114,10 @@
 				$result = $this->User_model->update($where, $input);
 				
 				if ($result) {
-					$this->Etc_m->showMessage(200, "Tambah data user berhasil!");
+					$this->Etc_m->showMessage(200, "Edit data user berhasil!");
 					redirect(site_url('admin/User'));
 				}else {
-					$this->Etc_m->showMessage(400, "Tambah data user gagal!");
+					$this->Etc_m->showMessage(400, "Edit data user gagal!");
 					redirect(site_url('admin/User'));
 				}
 			}
